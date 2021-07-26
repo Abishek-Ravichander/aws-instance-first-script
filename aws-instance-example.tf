@@ -1,9 +1,9 @@
 resource "aws_instance" "web1" {
-   ami           = "${lookup(var.ami_id, var.region)}"
+   ami           = "ami-035b3c7efe6d061d5"
    instance_type = "t2.micro"
  }
 
 provider "aws" {
-  region  = "${var.region}"  
+  region  = "us-east-1"  
   version = "~> 2.0"
 }
